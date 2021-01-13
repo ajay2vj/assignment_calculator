@@ -1,0 +1,47 @@
+<html> 
+<title>Calculator</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="js/script.js"></script>
+   <head> 
+   </head> 
+   <body>
+    <div class="app">
+      <div class="container">
+          <div class="window">
+              <div class="display">
+                  <input type="text" id="bar" size="15" readonly>
+              </div>
+          </div>
+          <div class="UI">
+              <div class="num">
+                  <button class="btn btn-light number" onclick="v('1')">1</button>
+                  <button class="btn btn-light number" onclick="v('2')">2</button>
+                  <button class="btn btn-light number" onclick="v('3')">3</button>
+                  <button class="btn btn-light number" onclick="v('4')">4</button>
+                  <button class="btn btn-light number" onclick="v('5')">5</button>
+                  <button class="btn btn-light number" onclick="v('6')">6</button>
+                  <button class="btn btn-light number" onclick="v('6')">7</button>
+                  <button class="btn btn-light number" onclick="v('8')">8</button>
+                  <button class="btn btn-light number" onclick="v('9')">9</button>
+                  <button class="btn btn-light number" onclick="v('0')">0</button>
+                  <button class="btn btn-light number" onclick="v('.')">.</button>
+                  <button class="btn btn-light number" onclick="equal()" id="equal">=</button>
+              </div>
+              <div class="ops">
+                  <button class="btn btn-dark operation" onclick="reset('')">C</button>
+                  <div class="btn btn-dark operation" onclick="v('/')">/</div>
+                  <div class="btn btn-dark operation" onclick="v('*')">X</div>
+                  <div class="btn btn-dark operation" onclick="v('-')">-</div>
+                  <div class="btn btn-dark operation" onclick="v('+')">+</div>
+              </div>
+          </div>
+          <div class="window">
+              <div class="display">
+                  <div id="history"></div>
+              </div>
+          </div>
+      </div>
+    </div>
+   </body> 
+</html>
